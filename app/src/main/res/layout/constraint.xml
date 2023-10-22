@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-13dp">
+
+    <!-- First Name text -->
+    <TextView
+        android:id="@+id/textViewFirstName"
+        android:layout_width="176dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="First Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- First Name EditText -->
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/textViewFirstName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/textViewFirstName"
+        app:layout_constraintTop_toBottomOf="@id/textViewFirstName"
+        app:layout_constraintWidth="wrap" />
+
+    <!-- Last Name text -->
+    <TextView
+        android:id="@+id/textViewLastName"
+        android:layout_width="176dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:text="Last Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/textViewFirstName"
+        app:layout_constraintTop_toTopOf="@id/textViewFirstName" />
+
+    <!-- Last Name EditText -->
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/textViewLastName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/textViewLastName"
+        app:layout_constraintTop_toBottomOf="@id/textViewLastName"
+        app:layout_constraintWidth="wrap" />
+
+    <!-- Gender text -->
+
+    <!-- Male radio button -->
+
+    <!-- Female radio button -->
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="107dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Gender"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/textViewFirstName"
+        app:layout_constraintTop_toBottomOf="@id/editTextFirstName" />
+
+    <RadioButton
+        android:id="@+id/radioButtonFemale"
+        android:layout_width="107dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:text="Female"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewGender"
+        app:layout_constraintStart_toEndOf="@id/radioButtonMale" />
+
+    <RadioButton
+        android:id="@+id/radioButtonMale"
+        android:layout_width="107dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:text="Male"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewGender"
+        app:layout_constraintStart_toEndOf="@id/textViewGender" />
+
+    <!-- Birthday TextView -->
+
+    <!-- Birthday EditText -->
+
+    <TextView
+        android:id="@+id/textViewBirthday"
+        android:layout_width="108dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Birthday"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/textViewGender"
+        app:layout_constraintTop_toBottomOf="@id/radioButtonFemale" />
+
+    <EditText
+        android:id="@+id/editTextBirthday"
+        android:layout_width="365dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:hint="__/__/____"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/textViewBirthday"
+        app:layout_constraintTop_toBottomOf="@id/textViewBirthday" />
+
+    <!-- Address TextView -->
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="108dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Address"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/textViewGender"
+        app:layout_constraintTop_toBottomOf="@id/editTextBirthday" />
+
+    <!-- Address EditText -->
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="367dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your address"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/textViewAddress"
+        app:layout_constraintTop_toBottomOf="@id/textViewAddress" />
+
+    <!-- Email TextView -->
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="108dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Email"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/textViewGender"
+        app:layout_constraintTop_toBottomOf="@id/editTextAddress" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="365dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail" />
+
+    <!-- Terms Checkbox -->
+    <CheckBox
+        android:id="@+id/termsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/textViewGender"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
+
+    <!-- "I agree to terms of use" TextView -->
+    <TextView
+        android:id="@+id/termsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="I agree to Terms of Use"
+        app:layout_constraintStart_toEndOf="@id/termsCheckbox"
+        app:layout_constraintBaseline_toBaselineOf="@id/termsCheckbox" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="142dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@id/textViewAddress"
+        app:layout_constraintTop_toBottomOf="@id/termsCheckbox" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
